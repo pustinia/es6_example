@@ -73,6 +73,35 @@ const test_two = `it's sleepy`;
 const someLiterals = `hey, ${test_one} ${test_two}`;
 console.log(someLiterals);
 
+// ES11, Optional chaining
+const person = {
+    job : {
+        manager : {
+            name : `doctorA`
+        }
+    }
+};
+const person2 = {
+    name : `I am person`
+};
+console.log(person.job?.manager?.name);
+console.log(person2.job?.manager?.name);
+
+// nullish coalescing operation
+//const nameVale = '';
+//const nameVale = 0;
+const nameVale = undefined;
+const userName = nameVale || 'Guest';
+console.log(userName); // all values are Guest
+
+// undefined 체크 ??
+//const nameVale2 = '';
+//const nameVale2 = 0;
+const nameVale2 = undefined;
+const userName2 = nameVale2 ?? 'Guest2';
+console.log(userName2); // undefined만 값이 없음
+
+
 
 
 
