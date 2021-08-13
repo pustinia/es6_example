@@ -30,7 +30,7 @@ console.log(`${studentName}  ${studentLevel}`);
 
 // Array도 쌉가능
 const animals = [ '1', '2', '3'];
-const [ num1, num2, num3] = animals;
+const [num1, num2, num3] = animals;
 console.log(`${num1} ${num2} ${num3}`);
 
 // ==== spread syntax, 첫번째 참조 값만 복사됨 (object인 경우 object의 주소)
@@ -46,9 +46,33 @@ console.log(copyedArr2);
 
 // copy ojbect
 const copyObj = { ...obj2};
-console.log(copyObj);
+console.log('>>>>',copyObj);
 
 // merge all array
 const mergedArr = [ ...copyedArr, ...copyedArr2];
 console.log(mergedArr);
+
+// === default parameters
+const needParamFunction = (first_param = `default value...`) => { // set default param...
+    console.log(first_param)
+}
+needParamFunction(`parma exist...`);
+needParamFunction(); // use default
+
+// ===== ternary operator
+const testTernaryOp = (is_param) => {
+    const someValue = is_param ? `start` : `end`;
+    console.log(someValue);
+}
+testTernaryOp(`gkgkgkgk`);  // start
+testTernaryOp();  // end
+
+// template literals
+const test_one = `blablabla`;
+const test_two = `it's sleepy`;
+const someLiterals = `hey, ${test_one} ${test_two}`;
+console.log(someLiterals);
+
+
+
 
