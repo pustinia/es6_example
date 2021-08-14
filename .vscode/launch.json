@@ -5,13 +5,29 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "es6_11_test Launch22",
+            "name": "es6_11_test",
             "program": "${workspaceFolder}/es6_11_test.js",
             "request": "launch",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "type": "node"
+            "type": "pwa-node"
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "type script sample",
+            "preLaunchTask": "tsc: build - tsconfig.json",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceRoot}/sample.ts",
+            "outFiles": [
+                "${workspaceFolder}/out/*.js"
+            ],
+            "presentation": {
+                "panel": "new"
+            }
         }
     ]
 }

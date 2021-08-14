@@ -54,7 +54,7 @@ console.log(mergedArr);
 
 // === default parameters
 const needParamFunction = (first_param = `default value...`) => { // set default param...
-    console.log(first_param)
+    console.log(first_param);
 }
 needParamFunction(`parma exist...`);
 needParamFunction(); // use default
