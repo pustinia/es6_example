@@ -14,7 +14,7 @@ dirArray.forEach(async fileName => {
         crlfDelay: Infinity
     });
     for await (const line of rl) {
-    // Each line in input.txt will be successively available here as `line`.
+        // Each line in input.txt will be successively available here as `line`.
         console.log(`${fileName} Line from file: ${line}`);
     }
 });
