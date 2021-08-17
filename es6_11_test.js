@@ -94,10 +94,11 @@ const nameVale = undefined;
 const userName = nameVale || 'Guest';
 console.log(userName); // all values are Guest
 
-// undefined 체크 ??
+// undefined 만 체트하는 경우임..
 //const nameVale2 = '';
 //const nameVale2 = 0;
-const nameVale2 = undefined;
+//const nameVale2 = undefined;
+const nameVale2 = null;  // undefined & null checking..
 const userName2 = nameVale2 ?? 'Guest2';
 console.log(userName2); // undefined만 값이 없음
 

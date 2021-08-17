@@ -1,4 +1,5 @@
 /**
+ * https://www.samsungsds.com/kr/insights/TypeScript.html
  * 1. build with tsc command
  * 2. transfort code to js
  * 3. run js code.
