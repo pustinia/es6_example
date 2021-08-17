@@ -5,6 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "functionalProtrams",
+            "program": "${workspaceFolder}/functional_program.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
             "name": "es6_11_test",
             "program": "${workspaceFolder}/es6_11_test.js",
             "request": "launch",
